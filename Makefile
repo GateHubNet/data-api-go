@@ -25,5 +25,6 @@ proto:
 
 .PHONY: start
 start: 
-	go run cmd/grpc/main.go && \
-	go run cmd/http/main.go
+	go run cmd/grpc/main.go & \
+	go run cmd/http/main.go & \
+	wait
