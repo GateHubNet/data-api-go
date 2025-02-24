@@ -36,7 +36,7 @@ func main() {
 	defer server.Store.Close()
 	defer func(Cache *redis.ClusterClient) {
 		if err := Cache.Close(); err != nil {
-			log.Fatal().Err(err).Msg("cannot close cache")
+			log.Error().Err(err).Msg("cannot close cache")
 		}
 	}(server.Cache)
 
