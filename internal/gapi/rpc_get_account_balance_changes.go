@@ -55,11 +55,3 @@ func (server *Server) GetAccountBalanceChanges(ctx context.Context, req *pb.GetA
 	// Return the response
 	return server.accountBalanceChangesResponseHelper(ctx, balanceChangePointers), nil
 }
-
-// Helper function to calculate the minimum of two integers
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
-}
