@@ -3,12 +3,13 @@ package gapi
 import (
 	"context"
 
-	"github.com/GateHubNet/data-api-go/models"
-	"github.com/GateHubNet/data-api-go/pb"
 	"github.com/rs/zerolog/log"
 	"github.com/scylladb/gocqlx/v2/qb"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
+
+	"github.com/GateHubNet/data-api-go/internal/models"
+	"github.com/GateHubNet/data-api-go/internal/pb"
 )
 
 func (server *Server) GetTransactionByHash(transactionHash string) (*pb.Transaction, error) {

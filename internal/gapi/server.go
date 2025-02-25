@@ -5,12 +5,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/GateHubNet/data-api-go/pb"
-	"github.com/GateHubNet/data-api-go/util"
 	"github.com/go-redis/redis"
 	"github.com/gocql/gocql"
 	"github.com/rs/zerolog/log"
 	"github.com/scylladb/gocqlx/v2"
+
+	"github.com/GateHubNet/data-api-go/internal/pb"
+	"github.com/GateHubNet/data-api-go/internal/util"
 )
 
 // Server serves gRPC requests for our GateHub Data Api service.

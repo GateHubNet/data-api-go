@@ -24,7 +24,7 @@ syntax = "proto3";
 
 package proto;
 
-option go_package="github.com/GateHubNet/data-api-go/pb";
+option go_package="github.com/GateHubNet/data-api-go/internal/pb";
 
 message BalanceChanges {
   /*

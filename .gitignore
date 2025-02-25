@@ -1,2 +1,4 @@
 doc/swagger/*
-pb/*
+internal/pb/*
+
+.idea/
